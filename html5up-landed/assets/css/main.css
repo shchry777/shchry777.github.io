@@ -2898,9 +2898,9 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #e44c65;
+			background-color: #ffffff;
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #000000 !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -3396,9 +3396,8 @@ input, select, textarea {
 		}
 
 		#header nav {
-			position: absolute;
-			right: 1em;
-			top: 0;
+			position: relative;
+			UP: 0.5em;
 		}
 
 			#header nav ul {
@@ -3430,7 +3429,7 @@ input, select, textarea {
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #e44c65;
+						color: #45ecc8;
 					}
 
 					#header nav ul li > ul {
@@ -4110,23 +4109,22 @@ input, select, textarea {
 
 	}
 	.back-btn {
-		position: fixed;
-		right: 50px;
-		bottom: 50px;
-		z-index: 10;
-		text-decoration: none;
-		border-bottom: 0;
-		background-color: brown;
-		width: 50px;
-		height: 50px;
-		border-radius: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		box-shadow: 2px 2px 10px 1px #242943;
-		font-size: 1.2em;
+		position: fixed; /* 將元素設定成固定位置，會固定在網頁畫面的某個地方 */
+		right: 50px;  /* 元素的位置要離畫面右邊多遠 */
+		bottom: 50px; /* 元素的位置要離畫面下面多遠 */
+		z-index: 1000;  /* 元素的圖層位置 */
+		border-bottom: 0;  /* 去掉下面出現的底線 */
+		background-color: brown;  /* 元素顏色 */
+		width: 50px;              /* 元素寬度 */
+		height: 50px;             /* 元素高度 */
+		border-radius: 50px;      /* 讓元素變成圓形 */
+		display: flex;            /* 元素的顯示模式 */
+		justify-content: center;  /* 水平置中 */
+		align-items: center;      /* 垂直置中 */
+		box-shadow: 2px 2px 10px 1px #242943;  /* 陰影*/
+		font-size: 1.2em;         /* 文字大小 */
 	
-		overflow: hidden;
+		overflow: hidden;         /* 讓元素裏頭的圖片不要超出範圍 */
 	}
 	
 	.back-img {
